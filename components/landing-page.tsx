@@ -59,23 +59,23 @@ const services = [
 const trustedCompanies = [
   {
     name: "Empresa 1",
-    logo: "https://via.placeholder.com/300x300.png?text=Empresa+1",
+    logo: "https://storage.googleapis.com/larecetta-ibis-images/Zenu120.png",
   },
   {
     name: "Empresa 2",
-    logo: "https://via.placeholder.com/300x300.png?text=Empresa+2",
+    logo: "https://storage.googleapis.com/larecetta-ibis-images/LogoMonticello2023.png",
   },
   {
     name: "Empresa 3",
-    logo: "https://via.placeholder.com/300x300.png?text=Empresa+3",
+    logo: "https://storage.googleapis.com/larecetta-ibis-images/Santander.png",
   },
   {
     name: "Empresa 4",
-    logo: "https://via.placeholder.com/300x300.png?text=Empresa+4",
+    logo: "https://storage.googleapis.com/larecetta-ibis-images/Sinfonia.png",
   },
   {
     name: "Empresa 5",
-    logo: "https://via.placeholder.com/300x300.png?text=Empresa+5",
+    logo: "https://storage.googleapis.com/larecetta-ibis-images/Cunit120.png",
   },
 ];
 
@@ -105,14 +105,11 @@ export function LandingPageComponent() {
       <header className="px-4 lg:px-6 h-16 flex items-center border-b bg-white">
         <Link className="flex items-center justify-center" href="#">
           <Image
-            src="https://via.placeholder.com/200x200.png?text=MerCOLonuestro"
+            src="/images/mercalonuestro-logo.png"
             alt="MerCOLonuestro Logo"
-            width={40}
-            height={40}
+            width={240}
+            height={65}
           />
-          <span className="ml-2 text-2xl font-bold text-gray-900">
-            MerCOLonuestro
-          </span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link
@@ -258,7 +255,7 @@ export function LandingPageComponent() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 text-gray-900">
               Empresas que Confían en Nosotros
             </h2>
-            <div className="relative overflow-hidden h-20">
+            <div className="relative overflow-hidden">
               <div
                 className="flex transition-transform duration-500 ease-in-out"
                 style={{ transform: `translateX(-${currentCompany * 100}%)` }}
@@ -271,8 +268,8 @@ export function LandingPageComponent() {
                     <Image
                       src={company.logo}
                       alt={company.name}
-                      width={300}
-                      height={300}
+                      width={200}
+                      height={200}
                       className="object-contain"
                     />
                   </div>
